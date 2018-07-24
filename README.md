@@ -8,8 +8,9 @@ Data is treated as JSON and read into the document.
 
 Future improvements: 
 
-Dynamically create tabs with populated data per event
+  Dynamically create tabs with populated data per event
   
+  time: n minutes/hours ago
   
   Not sure how the data is going to be stored so need to find out. 
   
