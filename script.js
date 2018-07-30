@@ -9,52 +9,14 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1Omn9eF5upJ48fO8yhcatGBGHC
 	populateTab(jsonObj);
 	populateUpdate(jsonObj);
 });
-/*
-class Incident{
-	constructor(eventName, update, type){
-		this.eventName = eventName;
-		this.update =[];
-		this.type = type;
-	}
-}
-*/
+
 
 var section = document.querySelector('section');
-/*
-var arr = new Incident();
-var arrCounter = 0;
-*/
+
 function populateUpdate(jsonObj){
 		var updateField = document.createElement('article');
 		
-	/*
-		for (var n = jsonObj['feed']['entry'].length -1; n >= 0; n--){
-			var current = titleCase(jsonObj.feed.entry[n].gsx$incident.$t);
-			var previous;
-			if(previous != current){
-				//todo: check if an incident exsists
-				//for 
-				arr[arrCounter] = new Incident()
-				arr[arrCounter].eventName = current;
-				var count = arr[arrCounter].update.length;
-				arr[arrCounter].update[count] = jsonObj.feed.entry[n].gsx$update.$t;
-				console.log(arr[arrCounter]);
-				arrCounter++;
-			}
-			else{
-				var count = arr[arrCounter].update.length;
-				arr[arrCounter].update[count] = jsonObj.feed.entry[n].gsx$update.$t;
-				console.log(arr[arrCounter]);
-				arrCounter++;
-			}
-			arr[arrCounter]=current;
-			previous = current;
-			*/
-			/*
-			$("div#tabs").append("<div id='tab" + jsonObj.feed.entry[n].gsx$update.$t + "'>#" + jsonObj['feed']['entry'][n]['gsx$update']['$t'] + "</div>");
-			$("div#tabs").tabs("refresh");
-			*/
-			
+	
 	for (var n = jsonObj['feed']['entry'].length -1; n >= 0; n--){
 	
 			
